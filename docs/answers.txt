@@ -1,0 +1,68 @@
+1.Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 723 bytes | 723.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/kzy030509/assignment2.git
+   f4975e5..2444d17  master -> master
+
+2.9
+
+3.Wed Oct 23 22:23:25 2024 +0800
+
+4.使用分支的两个原因：
+   - **并行开发**：分支允许多个开发者同时进行不同的功能开发，而不相互干扰。
+   - **实验和回滚**：可以在分支上进行实验性开发，若实验失败，可以轻松地删除分支而不会影响主分支的稳定性。
+
+5. git log 与 git status 的区别：
+   - **git log**：用于查看项目的提交历史，可以显示所有的提交记录，包括作者、日期和提交信息。
+   - **git status**：用于查看当前工作目录和暂存区的状态，包括哪些文件已更改、哪些文件已暂存或未暂存等。
+
+6. commit 03106e92a1e36708334c69dd071088c6d0937b1d
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 11 16:58:59 2019 -0400
+
+    -> Declared the trivial destructors for all classes
+    -> Fully formatted toString methods for all classes
+    -> Added test cases in the main method for testing the implementations
+    -> Added validation on value for engine sizes in the  Car class
+
+commit f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:42:39 2019 -0400
+
+    -> Partial implementation of PoweredVehicle and Car
+    -> Definition of virtual functions
+
+commit f9c24b027e6275ff6a1911241014c44971b4e8d0
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Thu Sep 5 18:04:36 2019 -0400
+
+    Refactored Vehicle class to separate definition and declarations
+    Added mileageEstimate abstract method to Vehicle
+    Implemented the Bicycle class
+7.commit f73589e9278b9f645b279c90351355cf1c3e8174 (HEAD -> master)
+Author: kzy <1986126804@qq.com>
+Date:   Wed Oct 23 22:41:09 2024 +0800
+
+    Created answers.txt file
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+8.面向对象编程中的概念：
+   - (I) **继承**：允许一个类（子类）继承另一个类（父类）的属性和方法，从而实现代码的重用。
+   - (II) **多态**：允许不同的对象以不同的方式响应相同的消息或方法调用，通常通过方法重写或接口实现。
+   - (III) **封装**：将对象的状态（属性）和行为（方法）绑定在一起，并限制对对象内部状态的直接访问，只能通过公开的方法来操作，从而提高安全性和可维护性。
+
+9. “Dictator and Lieutenants”工作流与“Integration manager”工作流的主要区别：
+   - “Dictator and Lieutenants”工作流中有一个主要负责人（独裁者），负责合并所有分支，而副手则处理日常的合并和开发任务。
+   - “Integration manager”工作流则由一个集成经理负责管理整个项目的合并，所有的开发者在同一个主干上工作，相对集中。
+
+10. 团队中100名开发者受益于遵循“Dictator and Lieutenants”工作流的原因：
+   - 这种工作流允许多个开发者在各自的分支上独立工作，减少了因多人同时在主分支上开发而导致的合并冲突，同时通过独裁者的审查和控制，确保代码质量和项目方向的统一。
